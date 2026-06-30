@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carebench"
+version = "0.1.0"
+description = "CAREBench: Child AI Risk Evaluation benchmark code."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Handshake AI Research" }]
+keywords = ["benchmark", "child-safety", "llm-evaluation", "multijudge", "ai-safety"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "openai>=1.40.0",
+    "anthropic>=0.34.0",
+    "google-genai>=0.3.0",
+    "google-auth>=2.0.0",
+    "requests>=2.31.0",
+    "datasets>=2.20.0",
+    "huggingface_hub>=0.24.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.2.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/Handshake-AI-Research/CAREBench"
+Dataset = "https://huggingface.co/datasets/handshake-ai-research/CAREBench"
+
+[project.scripts]
+carebench-load = "carebench.load_dataset:main"
+carebench-generate = "scripts.generate_responses:main"
+carebench-judge = "carebench.judge:main"
+carebench-score = "carebench.score:main"
+
+[tool.setuptools]
+packages = ["carebench", "scripts"]
