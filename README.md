@@ -9,7 +9,7 @@ See the [paper][arxiv] for details about the benchmark.
 
 <br>
 <p align="center">
-<img src="https://raw.githubusercontent.com/handshake-ai-research/assets/main/carebench/carebench_overview.png" width="900" alt="CAREBench overview">
+<img src="https://raw.githubusercontent.com/handshake-ai-research/assets/main/carebench/carebench_overview.png" width="700" alt="CAREBench overview">
 </p>
 
 
