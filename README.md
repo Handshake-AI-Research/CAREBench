@@ -7,6 +7,11 @@ See the [paper][arxiv] for details about the benchmark.
 [arxiv]: https://arxiv.org/abs/2606.29685
 [huggingface]: https://huggingface.co/datasets/handshake-ai-research/CAREBench
 
+<br>
+<p align="center">
+<img src="https://github.com/Handshake-AI-Research/assets/blob/main/carebench/carebench_overview.png" width="900" alt="CAREBench overview">
+</p>
+
 
 TODO: How to run the code to evaluate responses from any LLM
 
