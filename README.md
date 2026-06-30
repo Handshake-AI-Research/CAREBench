@@ -13,7 +13,9 @@ See the [paper][arxiv] for details about the benchmark.
 </p>
 
 
-TODO: How to run the code to evaluate responses from any LLM
+TODO: How to run the code to evaluate responses from any LLM.
+
+First download the dataset from Hugging Face [here][huggingface].
 
 
 ## Citation
